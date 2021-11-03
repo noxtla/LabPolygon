@@ -18,3 +18,8 @@ class Polygon():
     @ancho.setter
     def ancho(self):
         return self.ancho
+    
+    #overwrite str method
+    
+    def __str__(self) -> str:
+        return f'El alto es {self.alto} El ancho es {self.ancho}'
