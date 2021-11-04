@@ -15,11 +15,12 @@ class Polygon():
     def alto(self,alto):
         self._alto = alto
 
+    #Aqui le pusiste return
     @ancho.setter
-    def ancho(self):
-        return self.ancho
+    def ancho(self,ancho):
+        self._ancho = ancho
     
     #overwrite str method
-    
+    #falto el atributo encapsulado
     def __str__(self) -> str:
-        return f'El alto es {self.alto} El ancho es {self.ancho}'
+        return f'El alto es {self._alto} El ancho es {self._ancho}'
